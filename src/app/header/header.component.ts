@@ -1,4 +1,4 @@
-import { Component, inject, effect } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { ThemeService } from "../services/index";
 
 type ColorTheme = "dark" | "light";
