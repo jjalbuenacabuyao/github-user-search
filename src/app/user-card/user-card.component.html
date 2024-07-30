@@ -1,0 +1,36 @@
+<section class="userCard">
+  <div class="userCard__header">
+    <img [src]="userData.avatarUrl" [alt]="'Avatar of ' + userData.name">
+    <div class="header__nameContainer">
+      <h1 aria-label="Name">{{userData.name}}</h1>
+      <p aria-label="Username">{{userData.username}}</p>
+    </div>
+    <p aria-label="Date joined">{{userData.joinedDate}}</p>
+  </div>
+
+  <p class="userCard__bio" aria-label="Bio">{{userData.bio}}</p>
+
+  <div class="userCard__stats">
+    <div class="stats__repo">
+      <h2>Repos</h2>
+      <p aria-label="Number of public repositories">{{userData.publicRepositories}}</p>
+    </div>
+
+    <div class="stats__followers">
+      <h2 id="followers">Followers</h2>
+      <p aria-describedby="followers">{{userData.followers}}</p>
+    </div>
+
+     <div class="stats__following">
+      <h2 id="following">Following</h2>
+      <p aria-describedby="following">{{userData.following}}</p>
+    </div>
+  </div>
+
+  <div class="userCard__footer">
+    <p aria-label="Location">{{userData.location}}</p>
+    <p aria-label="Website link">{{userData.blog}}</p>
+    <p aria-label="Twitter username">{{userData.twitterUsername}}</p>
+    <p aria-label="Company">{{userData.company}}</p>
+  </div>
+</section>
