@@ -32,6 +32,11 @@ body[data-theme="dark"] {
   color: var(--gray-50);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 ul,
 li {
   list-style: none;
