@@ -1,6 +1,6 @@
-<form class="search">
+<form class="search" [formGroup]="usernameForm" (ngSubmit)="onSubmit()">
   <span class="material-symbols-outlined search__icon"> search </span>
   <label for="username-input" class="sr-only">Search GitHub username</label>
-  <input class="search__input" type="text" name="username" id="username-input" placeholder="Search GitHub username..." />
+  <input formControlName="username" class="search__input" type="text" name="username" id="username-input" placeholder="Search GitHub username..." />
   <button class="search__button" type="submit">Search</button>
 </form>
